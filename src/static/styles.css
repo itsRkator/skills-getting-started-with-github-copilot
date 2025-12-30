@@ -65,13 +65,44 @@ section h3 {
   background-color: #f9f9f9;
 }
 
-.activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+/* Participants section added to activity cards */
+.participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Keep a visible bulleted list but make it visually pleasant */
+.participants-list {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0 6px;
+  max-height: 140px;
+  overflow: auto;
+}
+
+.participants-list li {
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Empty state for no participants */
+.no-participants {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+  margin: 0;
 }
 
 .form-group {
